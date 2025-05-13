@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BDCA16A62DD38D1D000F7605 /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = BDCA16A52DD38D1D000F7605 /* SwiftLintFramework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BDCA16742DD38851000F7605 /* SkyVoyager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyVoyager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCA16A62DD38D1D000F7605 /* SwiftLintFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = SkyVoyager;
 			packageProductDependencies = (
+				BDCA16A52DD38D1D000F7605 /* SwiftLintFramework */,
 			);
 			productName = SkyVoyager;
 			productReference = BDCA16742DD38851000F7605 /* SkyVoyager.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = BDCA166B2DD38851000F7605;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BDCA16A42DD38D1D000F7605 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BDCA16752DD38851000F7605 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDCA16A42DD38D1D000F7605 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.59.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDCA16A52DD38D1D000F7605 /* SwiftLintFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDCA16A42DD38D1D000F7605 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = SwiftLintFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDCA166C2DD38851000F7605 /* Project object */;
 }
